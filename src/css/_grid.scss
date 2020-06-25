@@ -1,0 +1,56 @@
+$grid-row-width: 1400px;
+$grid-columns: 12;
+$grid-gutter: 16px;
+$grid-breakpoints: (
+  'xs': 400px,
+  'sm': 600px,
+  'md': 1000px,
+  'lg': 1400px,
+);
+
+.grid-row {
+  display: flex;
+  width: 100%;
+  max-width: $grid-row-width;
+  margin-left: calc(-#{$grid-gutter}/ 2);
+  margin-right: calc(-#{$grid-gutter}/ 2);
+}
+
+@function grid-class($span, $prefix) {
+  @if $prefix {
+    @return '.' + $prefix + '-grid-column-' + $span;
+  } @else {
+    @return '.grid-column-' + $span;
+  }
+}
+
+@mixin grid-column($prefix: null) {
+  @for $i from 1 to $grid-columns {
+    #{grid-class($i, $prefix)} {
+      width: calc(99.99% * #{$i} /#{$grid-columns});
+    }
+  }
+}
+
+@include grid-column();
+
+@each $prefix, $width in $grid-breakpoints {
+  @media screen and (max-width: #{$width}) {
+    @include grid-column($prefix);
+  }
+}
+
+[class^='grid-column'] {
+  padding-left: calc(#{$grid-gutter}/ 2);
+  padding-right: calc(#{$grid-gutter}/ 2);
+}
+
+.grid-row {
+  margin-bottom: $grid-gutter;
+}
+
+.content {
+  height: 100px;
+  width: 100%;
+  background-color: rebeccapurple;
+}
