@@ -46,10 +46,9 @@
             quasi cumque.
           </p>
         </div>
-        <div class="col-start-8 col-span-5">
+        <div class="col-start-8 col-span-5 relative h-0 w-full pb-3x4">
           <img
-            class="bg-gray-300 w-full object-cover"
-            style="height: 500px;"
+            class="bg-gray-300 w-full h-full object-cover absolute top-0"
             src="./images/1.jpg"
             alt=""
           />
@@ -63,11 +62,13 @@
         class="relative container grid grid-cols-12 gap-3 text-center text-white"
       >
         <div class="col-span-4">
-          <img
-            class="bg-gray-300 h-64 w-full mb-16 object-cover"
-            src="./images/2.jpg"
-            alt=""
-          />
+          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300">
+            <img
+              class="h-full w-full object-cover absolute top-0"
+              src="./images/2.jpg"
+              alt=""
+            />
+          </div>
           <h1 class="font-fjalla text-xl mb-5">Sleigh</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
@@ -78,11 +79,13 @@
           </p>
         </div>
         <div class="col-span-4">
-          <img
-            class="bg-gray-300 h-64 w-full mb-16 object-cover"
-            src="./images/3.jpg"
-            alt=""
-          />
+          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300">
+            <img
+              class="h-full w-full object-cover absolute top-0"
+              src="./images/3.jpg"
+              alt=""
+            />
+          </div>
           <h1 class="font-fjalla text-xl mb-5">Trekking</h1>
           <p class="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -97,11 +100,13 @@
           </p>
         </div>
         <div class="col-span-4">
-          <img
-            class="bg-gray-300 h-64 w-full mb-16 object-cover"
-            src="./images/4.jpg"
-            alt=""
-          />
+          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300">
+            <img
+              class="h-full w-full object-cover absolute top-0"
+              src="./images/4.jpg"
+              alt=""
+            />
+          </div>
           <h1 class="font-fjalla text-xl mb-5">Casual</h1>
           <p class="mb-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. inventore
@@ -127,7 +132,6 @@
           marginheight="0"
           marginwidth="0"
           src="https://www.openstreetmap.org/export/embed.html?bbox=-115.09963989257814%2C53.46516070239169%2C-112.80624389648439%2C54.21546706469533&amp;layer=mapnik"
-          style="border: 1px solid black;"
         ></iframe>
       </div>
     </div>
