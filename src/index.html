@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   </head>
-  <body class="w-full overflow-x-hidden font-noto leading-loose">
+  <body class="w-full overflow-x-hidden font-noto leading-loose sm:text-sm">
     <header class="font-fjalla text-white w-full absolute">
-      <div class="container flex items-center justify-between py-12">
-        <h1 class="text-4xl text-shadow">QUIET FRONTIER</h1>
+      <div
+        class="container flex items-center justify-between py-12 sm:flex-col"
+      >
+        <h1 class="text-4xl text-shadow sm:mb-4">QUIET FRONTIER</h1>
         <nav class="text-lg">
           <a href="#" class="mr-5 text-shadow">Works</a>
           <a href="#" class="mr-5 text-shadow">Contact</a>
@@ -26,9 +28,9 @@
       />
     </div>
 
-    <div class="w-full py-48">
-      <div class="container grid gap-3 grid-cols-12">
-        <div class="col-start-2 col-span-5">
+    <div class="w-full py-48 sm:py-20">
+      <div class="container grid gap-3 grid-cols-12 sm:grid-cols-1">
+        <div class="col-start-2 col-span-5 md:col-start-1 sm:col-span-12">
           <h1 class="text-3xl grid-1 mb-8">Wildlife starts here</h1>
           <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
@@ -46,9 +48,11 @@
             quasi cumque.
           </p>
         </div>
-        <div class="col-start-8 col-span-5 relative h-0 w-full pb-3x4">
+        <div
+          class="col-start-8 col-span-5 relative h-0 w-full pb-3x4 md:col-span-6 md:col-start-7"
+        >
           <img
-            class="bg-gray-300 w-full h-full object-cover absolute top-0"
+            class="bg-gray-300 w-full h-full object-cover absolute top-0 sm:hidden"
             src="./images/1.jpg"
             alt=""
           />
@@ -56,20 +60,22 @@
       </div>
     </div>
 
-    <div class="w-full relative pb-32">
-      <div class="w-full bg-black h-full absolute top-0 -ml-10 mt-24"></div>
+    <div class="w-full relative mb-24">
       <div
-        class="relative container grid grid-cols-12 gap-3 text-center text-white"
+        class="w-full bg-black h-full absolute top-0 -ml-10 mt-24 xl:ml-0"
+      ></div>
+      <div
+        class="relative container grid grid-cols-12 gap-3 md:text-sm sm:grid-cols-1 text-center text-white"
       >
-        <div class="col-span-4">
-          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300">
+        <div class="col-span-4 sm:mb-20">
+          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300 sm:mb-4">
             <img
               class="h-full w-full object-cover absolute top-0"
               src="./images/2.jpg"
               alt=""
             />
           </div>
-          <h1 class="font-fjalla text-xl mb-5">Sleigh</h1>
+          <h1 class="font-fjalla text-xl mb-5 sm:mb-0">Sleigh</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             autem rerum magnam sequi dignissimos. Autem iusto labore in vero
@@ -78,15 +84,15 @@
             ratione tenetur?
           </p>
         </div>
-        <div class="col-span-4">
-          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300">
+        <div class="col-span-4 sm:mb-20">
+          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300 sm:mb-4">
             <img
               class="h-full w-full object-cover absolute top-0"
               src="./images/3.jpg"
               alt=""
             />
           </div>
-          <h1 class="font-fjalla text-xl mb-5">Trekking</h1>
+          <h1 class="font-fjalla text-xl mb-5 sm:mb-0">Trekking</h1>
           <p class="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             saepe cum, cumque impedit numquam esse error provident fugit iusto
@@ -100,14 +106,14 @@
           </p>
         </div>
         <div class="col-span-4">
-          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300">
+          <div class="relative w-full h-0 pb-1x1 mb-16 bg-gray-300 sm:mb-4">
             <img
               class="h-full w-full object-cover absolute top-0"
               src="./images/4.jpg"
               alt=""
             />
           </div>
-          <h1 class="font-fjalla text-xl mb-5">Casual</h1>
+          <h1 class="font-fjalla text-xl mb-5 sm:mb-0">Casual</h1>
           <p class="mb-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. inventore
             obcaecati quos? Iure molestiae qui totam.
@@ -122,7 +128,7 @@
     </div>
 
     <div class="w-full">
-      <div class="container py-48">
+      <div class="container py-48 sm:py-20">
         <iframe
           class="w-full"
           width="425"
@@ -143,9 +149,9 @@
         alt=""
       />
       <div class="w-full h-full top-0 absolute bg-black opacity-75"></div>
-      <div class="container relative">
-        <div class="flex justify-between items-center">
-          <h1 class="font-fjalla text-2xl">QUIET FRONTIER</h1>
+      <div class="container relative sm:text-center sm:text-sm">
+        <div class="flex justify-between items-center sm:flex-col">
+          <h1 class="font-fjalla text-2xl sm:mb-4">QUIET FRONTIER</h1>
           <nav>
             <a class="mr-4" href="#">Works</a>
             <a class="mr-4" href="#">Contact</a>
