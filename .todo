@@ -1,4 +1,0 @@
-- minify images on production build
-- make layout responsive
-  ` customize breakpoints
-- purge dist directory before build
