@@ -19,6 +19,11 @@
   padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 480px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .text-shadow {
